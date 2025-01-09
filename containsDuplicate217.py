@@ -7,17 +7,17 @@ class Solution(object):
 
         """
 
-
-
-        counter = 0
+        if len(nums) <= 1:
+            return False
+   
         nums.sort()
 
-        for counter in range(len(nums) - 1):
 
-            if nums[counter] == nums[counter + 1]:
+        for i in range(len(nums) - 1):
+            if nums[i] == nums[i + 1]:
                 return True #if a duplicate is found
 
-            return False # a duplicate is not found
+        return False # a duplicate is not found
             
 
         
