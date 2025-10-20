@@ -38,7 +38,7 @@ class Solution:
         # 'prev' will end up as the new head of the reversed list
         prev = None
         # 'curr' is our pointer walking through the original list 
-        curr = head.  #initialy this points to 1 
+        curr = head  #initialy this points to 1 
 
         # iterate until we pass the tail (curr becomes None)
         while curr is not None:
